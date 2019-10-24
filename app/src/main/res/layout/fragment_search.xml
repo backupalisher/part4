@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.MainNavigation.SearchFragment">
+
+    <!--<LinearLayout-->
+        <!--android:layout_margin="20dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!--<ImageView-->
+            <!--android:id="@+id/logo"-->
+            <!--android:src="@drawable/light_house2"-->
+            <!--android:layout_width="50dp"-->
+            <!--android:layout_height="60dp" />-->
+        <!--<TextView-->
+            <!--android:textStyle="bold"-->
+            <!--android:textSize="12dp"-->
+            <!--android:textColor="@color/darkGray"-->
+            <!--android:text="@string/part4lighthouse"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content" />-->
+    <!--</LinearLayout>-->
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circle_button"
+            android:padding="7dp"
+            android:layout_margin="10dp"
+            android:layout_marginHorizontal="20dp">
+
+            <EditText
+                android:id="@+id/search_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+
+                android:textColor="@color/merlin"
+                android:layout_toLeftOf="@+id/search_button"
+                android:background="@android:color/transparent"
+                android:hint="Поиск..." />
+
+            <ImageButton
+                android:id="@+id/search_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="3dp"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/ic_search_black_24dp"
+                android:text="Button" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/searchResponseLayout"
+            android:layout_below="@+id/search_layout"
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/searchResponseRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="vertical">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:visibility="invisible"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!--<LinearLayout-->
+        <!--android:visibility="gone"-->
+        <!--android:id="@+id/brand_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--android:layout_marginHorizontal="20dp">-->
+        <!--<LinearLayout-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<ImageButton-->
+                <!--android:id="@+id/hp_icon"-->
+                <!--android:src="@drawable/hp"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:padding="10dp"-->
+                <!--android:background="@drawable/circle_button"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="64dp" />-->
+            <!--<ImageButton-->
+                <!--android:id="@+id/kyocera_icon"-->
+                <!--android:src="@drawable/kyocera"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:padding="10dp"-->
+                <!--android:background="@drawable/circle_button"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginHorizontal="10dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="64dp" />-->
+            <!--<ImageButton-->
+                <!--android:id="@+id/samsung_icon"-->
+                <!--android:src="@drawable/samsung"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:padding="10dp"-->
+                <!--android:background="@drawable/circle_button"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="64dp" />-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_marginBottom="10dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<ImageButton-->
+                <!--android:id="@+id/canon_icon"-->
+                <!--android:src="@drawable/canon"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:padding="10dp"-->
+                <!--android:background="@drawable/circle_button"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="64dp" />-->
+            <!--<ImageButton-->
+                <!--android:id="@+id/brother_icon"-->
+                <!--android:src="@drawable/brother"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:padding="10dp"-->
+                <!--android:background="@drawable/circle_button"-->
+                <!--android:layout_marginHorizontal="10dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="64dp" />-->
+            <!--<ImageButton-->
+                <!--android:id="@+id/xerox_icon"-->
+                <!--android:src="@drawable/xerox"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:padding="10dp"-->
+                <!--android:background="@drawable/circle_button"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="64dp" />-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content">-->
+            <!--<ImageButton-->
+                <!--android:id="@+id/epson_icon"-->
+                <!--android:src="@drawable/epson"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:padding="10dp"-->
+                <!--android:background="@drawable/circle_button"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="64dp" />-->
+            <!--<ImageButton-->
+                <!--android:id="@+id/ricoh_icon"-->
+                <!--android:src="@drawable/ricoh"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:padding="10dp"-->
+                <!--android:background="@drawable/circle_button"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_marginHorizontal="10dp"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="64dp" />-->
+            <!--<ImageButton-->
+                <!--android:id="@+id/konica_icon"-->
+                <!--android:src="@drawable/konica"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:scaleType="centerCrop"-->
+                <!--android:padding="10dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:background="@drawable/circle_button"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="64dp" />-->
+        <!--</LinearLayout>-->
+    <!--</LinearLayout>-->
+
+</RelativeLayout>

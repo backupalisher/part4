@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#008577</color>-->
+    <!--<color name="colorPrimaryDark">#00574B</color>-->
+    <!--<color name="colorAccent">#D81B60</color>-->
+    <!--<color name="darkGray">#5e5e5e</color>-->
+    <!--<color name="primary">#3F51B5</color>-->
+    
+    <color name="cgRed">#e13d31</color>
+    <color name="gainsboro">#dedde3</color>
+    <color name="bdBlue">#235391</color>
+    <color name="merlin">#413d3e</color>
+    <color name="yandex">#FFCC00</color>
+    <color name="corn">#f0b809</color>
+</resources>

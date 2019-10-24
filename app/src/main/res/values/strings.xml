@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">part4</string>
+    <string name="part4lighthouse">Part4\nlighthouse</string>
+    <string name="title_search">Поиск</string>
+    <string name="title_brands">Модели</string>
+    <string name="title_settings">Настройки</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Settings</string>
+</resources>
